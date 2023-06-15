@@ -79,7 +79,7 @@ Leverage actions, custom metadata, and claims for attribute-based access control
     alt="Project settings"
 />
 
-3.
+3. Go to **Roles** (from the left menu) and click **New** to add new roles. 
 
 <img
     src="screenshots/10 - Create Roles.png"
@@ -87,11 +87,15 @@ Leverage actions, custom metadata, and claims for attribute-based access control
     alt="Project settings"
 />
 
+4. Enter the roles **editor** and **journalist** as shown below and click **Save**. 
+
 <img
     src="screenshots/11 - Create Roles.png"
     width="75%"
     alt="Create roles"
 />
+
+5. You will now see the created roles. 
 
 <img
     src="screenshots/12 - Create Roles.png"
