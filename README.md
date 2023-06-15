@@ -304,15 +304,18 @@ Activate the environment by running:
 After running this command, your terminal should indicate that you are now working inside the env virtual environment.
 
 4. Install Dependencies:
+
 With the terminal at the project directory (the one containing requirements.txt), run 
 - `pip3 install -r requirements.txt` 
 
 to install the necessary dependencies.
 
 5. Configure Environment Variables:
+
 The project requires certain environment variables. Fill in the .env file with the values we retrieved from ZITADEL.
 
 6. Run the Application:
+
 The Flask API (in [app.py](https://github.com/zitadel/example-fine-grained-authorization/blob/main/app.py)) uses JWT tokens and custom claims for fine-grained access control. It checks the custom claim experience_level for the roles `journalist` and `editor` on every request, using this information to decide if the authenticated user can access the requested endpoint. Run the Flask application by executing: 
 - `python3 app.py`
 
