@@ -139,7 +139,37 @@ Leverage actions, custom metadata, and claims for attribute-based access control
 
 5. Now you have a service user, along with their client credentials. 
 
+### 4/ Add Authorizations for the Users
 
+<img
+    src="screenshots/18 - Service user authorizations.png"
+    width="75%"
+    alt="Add authorization"
+/>
+
+<img
+    src="screenshots/19 - Service user authorizations.png"
+    width="75%"
+    alt="Add authorization"
+/>
+
+<img
+    src="screenshots/20 - SU auhorization.png"
+    width="75%"
+    alt="Add authorization"
+/>
+
+<img
+    src="screenshots/21 - SU authorization .png"
+    width="75%"
+    alt="Add authorization"
+/>
+
+<img
+    src="screenshots/22 - SU authorization.png"
+    width="75%"
+    alt="Add authorization"
+/>
 
 
 
