@@ -72,10 +72,36 @@ Leverage actions, custom metadata, and claims for attribute-based access control
 />
 
 2. Select the **Assert Roles on Authentication** checkbox on the project dashboard and click **Save**.
+
 <img
     src="screenshots/2.1 - Tick the box.png"
     width="75%"
     alt="Project settings"
 />
+
+<img
+    src="screenshots/9 - Create Roles.png"
+    width="75%"
+    alt="Create roles"
+/>
+
+<img
+    src="screenshots/10 - Create Roles.png"
+    width="75%"
+    alt="Create roles"
+/>
+
+<img
+    src="screenshots/11 - Create Roles.png"
+    width="75%"
+    alt="Create roles"
+/>
+
+<img
+    src="screenshots/12 - Create Roles.png"
+    width="75%"
+    alt="Create roles"
+/>
+
 
 
