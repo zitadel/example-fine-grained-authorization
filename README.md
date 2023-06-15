@@ -1,9 +1,19 @@
 # example-fine-grained-authorization
 Leverage actions, custom metadata, and claims for attribute-based access control
 
-## Set up ZITADEL
+## ToC
+1. [Set up ZITADEL](#1)
+ - [1/ Create Media House Organization, Newsroom Project and Article API](#1.1)
+ - [2/ Create Roles in the Newsroom Project](#1.2)
+ - [3/ Create Users in the Newsroom Project](#1.3)
+ - [4/ Add Authorizations for the Users](#1.4)
+ - [5/ Add Metadata to the Users](#1.5)
+ - [6/ Create an Action to Capture Role and Metadata in Custom Claim](#1.6)
 
-### 1/ Create Media House Organization, Newsroom Project and Article API
+
+## Set up ZITADEL <a name="1"></a>
+
+### 1/ Create Media House Organization, Newsroom Project and Article API <a name="1.1"></a>
 
 1. Create the Media House organization and go to **Projects** and create a new project called Newsroom.
 
@@ -61,7 +71,7 @@ Leverage actions, custom metadata, and claims for attribute-based access control
     alt="Create org, project and API app"
 />
 
-### 2/ Create Roles in the Newsroom Project
+### 2/ Create Roles in the Newsroom Project <a name="1.2"></a>
 
 1. Also note down the **Resource ID** of your project (go to the project and copy the Resource ID)  
 
@@ -103,7 +113,7 @@ Leverage actions, custom metadata, and claims for attribute-based access control
     alt="Create roles"
 />
 
-### 3/ Create Users in the Newsroom Project
+### 3/ Create Users in the Newsroom Project <a name="1.3"></a>
 
 1. Go to the **Users** tab in your organization as shown below and go to the **Service Users** tab. We will be creating service users in this demo. To add a service user, click the **New** button.
 
@@ -139,7 +149,7 @@ Leverage actions, custom metadata, and claims for attribute-based access control
 
 5. Now you have a service user, along with their client credentials. 
 
-### 4/ Add Authorizations for the Users
+### 4/ Add Authorizations for the Users <a name="1.4"></a>
 
 1. Go to **Authorizations**. Click **New**. 
 
@@ -173,7 +183,7 @@ Leverage actions, custom metadata, and claims for attribute-based access control
     alt="Add authorization"
 />
 
-### 5/ Add Metadata to the Users
+### 5/ Add Metadata to the Users <a name="1.5"></a>
 
 Now, let's add metadata to the user profile to indicate their level of seniority. Use 'experience_level' as the key, and for its value, choose from 'junior', 'intermediate', or 'senior'. Although we can typically assume this metadata is set through an API call made by the HR application, for simplicity and ease of understanding, we will set the metadata directly in the console.
 
@@ -209,7 +219,7 @@ You can also add a few more service users with different roles and experience_le
     alt="Add metadata"
 />
 
-### 6/ Create an Action to Capture Role and Metadata in Custom Claim
+### 6/ Create an Action to Capture Role and Metadata in Custom Claim <a name="1.6"></a>
 
 1. Click on **Actions**. Click **New** to create a new action.
 
