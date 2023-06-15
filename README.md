@@ -9,6 +9,7 @@ Leverage actions, custom metadata, and claims for attribute-based access control
  - [4/ Add Authorizations for the Users](#1.4)
  - [5/ Add Metadata to the Users](#1.5)
  - [6/ Create an Action to Capture Role and Metadata in Custom Claim](#1.6)
+2. [Set up the API Project](#2)
 
 
 ## Set up ZITADEL <a name="1"></a>
@@ -271,3 +272,38 @@ You can also add a few more service users with different roles and experience_le
 />
 
 Now, when a user requests an access token, the action will be executed, transforming the user roles and metadata into the required format and adding them as a custom claim to the token. This custom claim can then be used by third-party applications to manage fine-grained user access.
+
+2. Set up the API Project <a name="2"></a>
+
+1. Clone the Project from GitHub:
+Run the command `git clone https://github.com/zitadel/example-fine-grained-authorization.git` to clone the project from this GitHub repository. 
+
+2. Navigate to the Project Directory:
+After cloning, navigate to the project directory with 
+`cd example-fine-grained-authorization`.
+
+3. Setup a Python Environment:
+Ensure you have Python 3 and pip installed. You can check this by running `python --version` and `pip --version` in your terminal. If you don't have 
+Python or pip installed, you will need to install them.
+Next, create a new virtual environment for this project by running `python3 -m venv env`.
+Activate the environment by running:
+On Windows: .\env\Scripts\activate
+On Unix or MacOS: source env/bin/activate
+After running this command, your terminal should indicate that you are now working inside the env virtual environment.
+
+4. Install Dependencies:
+With the terminal at the project directory (the one containing requirements.txt), run `pip install -r requirements.txt` to install the necessary dependencies.
+
+5. Configure Environment Variables:
+The project requires certain environment variables. Fill in the .env file with the values we retrieved from ZITADEL.
+
+6. Run the Application:
+Run the Flask application by executing: `python app.py`
+If everything is set up correctly, your Flask application should now be running.
+
+This project was developed and tested with Python 3. If you encounter any issues, please ensure you're using a Python 3 interpreter.
+
+The Flask API that uses JWT tokens and custom claims for fine-grained access control checks the custom claim experience_level for the roles journalist and editor on every request, using this information to decide if the authenticated user can access the requested endpoint.
+
+app.py
+
