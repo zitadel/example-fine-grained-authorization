@@ -260,5 +260,4 @@ You can also add a few more service users with different roles and experience_le
     alt="Add action"
 />
 
-
-
+Now, when a user requests an access token, the action will be executed, transforming the user roles and metadata into the required format and adding them as a custom claim to the token. This custom claim can then be used by third-party applications to manage fine-grained user access.
