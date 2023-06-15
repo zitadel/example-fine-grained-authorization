@@ -10,6 +10,7 @@ Leverage actions, custom metadata, and claims for attribute-based access control
  - [5/ Add Metadata to the Users](#1.5)
  - [6/ Create an Action to Capture Role and Metadata in Custom Claim](#1.6)
 2. [Set up the API Project](#2)
+3. [Run and Test the API](#3)
 
 
 ## Set up ZITADEL <a name="1"></a>
