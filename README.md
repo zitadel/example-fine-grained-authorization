@@ -345,9 +345,38 @@ User with `editor` role and `junior` experience_level tries to call `edit_articl
 - `curl -H "Authorization: Bearer <your_access_token>" -X POST http://localhost:5000/edit_article`
 - Expected Output: `{"message": "Article edited successfully"}`
 
+
 ***Scenario 2: Junior Editor Tries to Publish an Article (Failure)***
 User with `editor` role and `junior` experience_level tries to call `publish_article` endpoint.
 
 - `curl -H "Authorization: Bearer <your_access_token>" -X POST http://localhost:5000/publish_article`
-- `Expected Output: {"message": "Access denied! \nYou are a junior editor and therefore cannot access publish_article"}`
+- Expected Output: `{"message": "Access denied! \nYou are a junior editor and therefore cannot access publish_article"}`
+
+
+***Scenario 3: Senior Journalist Tries to Write an Article (Success)***
+User with `journalist` role and `senior` experience_level tries to call `write_article` endpoint.
+
+- `curl -H "Authorization: Bearer <your_access_token>" -X POST http://localhost:5000/write_article`
+- Expected Output: `{"message": "Article written successfully"}`
+
+
+***Scenario 4: Junior Journalist Tries to Review Articles (Failure)***
+User with `journalist` role and 'junior' experience_level tries to call `review_articles` endpoint.
+
+- `curl -H "Authorization: Bearer <your_access_token>" -X POST http://localhost:5000/review_articles`
+- Expected Output: `{"message": "Access denied! \nYou are a junior journalist and therefore cannot access review_articles"}`
+
+
+***Scenario 5: Senior Editor Tries to Review Articles (Success)***
+User with `editor` role and `senior` experience_level tries to access `review_articles` endpoint.
+
+- `curl -H "Authorization: Bearer <your_access_token>" -X POST http://localhost:5000/review_articles`
+- Expected Output: `{"message": "Article reviewed successfully"}`
+
+
+***Scenario 6: Intermediate Journalist Tries to Publish an Article (Success)***
+User with `journalist` role and `intermediate` experience_level tries to access `publish_article` endpoint.
+
+- `curl -H "Authorization: Bearer <your_access_token>" -X POST http://localhost:5000/publish_article`
+- Expected Output: `{"message": "Article published successfully"}`
 
