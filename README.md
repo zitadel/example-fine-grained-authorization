@@ -5,7 +5,7 @@ Leverage actions, custom metadata, and claims for attribute-based access control
 
 ### 1/ Create Media House Organization, Newsroom Project and Article API
 
-Create the Media House organization and go to **Projects** and create a new project called Newsroom.
+1. Create the Media House organization and go to **Projects** and create a new project called Newsroom.
 
 <img
     src="screenshots/1 - New Org.png"
@@ -13,7 +13,7 @@ Create the Media House organization and go to **Projects** and create a new proj
     alt="Create org, project and API app"
 />
 
-In the Newsroom project, click the **New** button to create a new application. 
+2. In the Newsroom project, click the **New** button to create a new application. 
 
 <img
     src="screenshots/2 - New Project.png"
@@ -21,7 +21,7 @@ In the Newsroom project, click the **New** button to create a new application.
     alt="Create org, project and API app"
 />
 
-Add a name and select type **API**.
+3. Add a name and select type **API**.
 
 <img
     src="screenshots/3 - New API.png"
@@ -29,7 +29,7 @@ Add a name and select type **API**.
     alt="Create org, project and API app"
 />
 
-Select **Basic** as the authentication method and click **Continue**. 
+4. Select **Basic** as the authentication method and click **Continue**. 
 
 <img
     src="screenshots/4 - New API.png"
@@ -37,14 +37,14 @@ Select **Basic** as the authentication method and click **Continue**.
     alt="Create org, project and API app"
 />
 
-Now review your configuration and click **Create**.  
+5. Now review your configuration and click **Create**.  
 <img
     src="screenshots/5 - New API.png"
     width="75%"
     alt="Register the API"
 />
 
-You will now see the API’s **Client ID** and the **Client Secret**. Copy them and click **Close**. 
+6. You will now see the API’s **Client ID** and the **Client Secret**. Copy them and save them. Click **Close**. 
 
 <img
     src="screenshots/7 - API Client ID and Secret.png"
@@ -52,7 +52,8 @@ You will now see the API’s **Client ID** and the **Client Secret**. Copy them 
     alt="Create org, project and API app"
 />
 
-When you click on **URLs** on the left, you will see the relevant OIDC URLs. Note down the **issuer** URL, **token_endpoint** and **introspection_endpoint**.  
+7. When you click on **URLs** on the left, you will see the relevant OIDC URLs. Note down the **issuer** URL, **token_endpoint** and **introspection_endpoint**.  
+
 <img
     src="screenshots/8 - URLs.png"
     width="75%"
