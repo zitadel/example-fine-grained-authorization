@@ -142,6 +142,7 @@ Leverage actions, custom metadata, and claims for attribute-based access control
 ### 4/ Add Authorizations for the Users
 
 1. Go to **Authorizations**. Click **New**. 
+
 <img
     src="screenshots/19 - Service user authorizations.png"
     width="75%"
@@ -165,6 +166,7 @@ Leverage actions, custom metadata, and claims for attribute-based access control
 />
 
 4. You can see the service user **Lois Lane** now has the role **journalist** in the **Newsroom** project. 
+
 <img
     src="screenshots/22 - SU authorization.png"
     width="75%"
