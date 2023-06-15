@@ -325,7 +325,7 @@ This project was developed and tested with Python 3. If you encounter any issues
 
 ## 3. Run and Test the API <a name="3"></a>
 
-**Run the API** 
+### Run the API
 
 1. Ensure you have cloned the repository and installed the necessary dependencies as described earlier.
 2. Run the `client_credentials_token_generator.py` script to generate an access token. Open your terminal and navigate to the project directory, then run the script using python3:
@@ -337,44 +337,44 @@ This project was developed and tested with Python 3. If you encounter any issues
 
 Now you can use cURL or any other HTTP client (like Postman) to make requests to the API. Remember to replace your_access_token in the curl commands with the access token you obtained in step 2.
 
-**Test the API**
+### Test the API
 
-***Scenario 1: Junior Editor Tries to Edit an Article (Success)***
+**Scenario 1: Junior Editor Tries to Edit an Article (Success)**
 User with `editor` role and `junior` experience_level tries to call `edit_article` endpoint.
 
 - `curl -H "Authorization: Bearer <your_access_token>" -X POST http://localhost:5000/edit_article`
 - Expected Output: `{"message": "Article edited successfully"}`
 
 
-***Scenario 2: Junior Editor Tries to Publish an Article (Failure)***
+**Scenario 2: Junior Editor Tries to Publish an Article (Failure)**
 User with `editor` role and `junior` experience_level tries to call `publish_article` endpoint.
 
 - `curl -H "Authorization: Bearer <your_access_token>" -X POST http://localhost:5000/publish_article`
 - Expected Output: `{"message": "Access denied! \nYou are a junior editor and therefore cannot access publish_article"}`
 
 
-***Scenario 3: Senior Journalist Tries to Write an Article (Success)***
+**Scenario 3: Senior Journalist Tries to Write an Article (Success)**
 User with `journalist` role and `senior` experience_level tries to call `write_article` endpoint.
 
 - `curl -H "Authorization: Bearer <your_access_token>" -X POST http://localhost:5000/write_article`
 - Expected Output: `{"message": "Article written successfully"}`
 
 
-***Scenario 4: Junior Journalist Tries to Review Articles (Failure)***
+**Scenario 4: Junior Journalist Tries to Review Articles (Failure)**
 User with `journalist` role and 'junior' experience_level tries to call `review_articles` endpoint.
 
 - `curl -H "Authorization: Bearer <your_access_token>" -X POST http://localhost:5000/review_articles`
 - Expected Output: `{"message": "Access denied! \nYou are a junior journalist and therefore cannot access review_articles"}`
 
 
-***Scenario 5: Senior Editor Tries to Review Articles (Success)***
+**Scenario 5: Senior Editor Tries to Review Articles (Success)**
 User with `editor` role and `senior` experience_level tries to access `review_articles` endpoint.
 
 - `curl -H "Authorization: Bearer <your_access_token>" -X POST http://localhost:5000/review_articles`
 - Expected Output: `{"message": "Article reviewed successfully"}`
 
 
-***Scenario 6: Intermediate Journalist Tries to Publish an Article (Success)***
+**Scenario 6: Intermediate Journalist Tries to Publish an Article (Success)**
 User with `journalist` role and `intermediate` experience_level tries to access `publish_article` endpoint.
 
 - `curl -H "Authorization: Bearer <your_access_token>" -X POST http://localhost:5000/publish_article`
