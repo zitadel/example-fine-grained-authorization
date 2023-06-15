@@ -211,7 +211,7 @@ You can also add a few more service users with different roles and experience_le
 
 ### 6/ Create an Action to Capture Role and Metadata in Custom Claim
 
-Click on **Actions**.
+1. Click on **Actions**. Click **New** to create a new action.
 
 <img
     src="screenshots/27 - Action.png"
@@ -219,6 +219,7 @@ Click on **Actions**.
     alt="Add action"
 />
 
+2. In the **Create an Action** section, give the action the same name as the function name, i.e., assignRoleAndExperienceClaims. In the script field, copy/paste the code in [assignRoleAndExperienceClaims.js](https://github.com/zitadel/example-fine-grained-authorization/blob/main/zitadel_actions/assignRoleAndExperienceClaims.js). Click **Add**.
 
 <img
     src="screenshots/28 - Action.png"
@@ -226,6 +227,7 @@ Click on **Actions**.
     alt="Add action"
 />
 
+3. The **assignRoleAndExperienceClaims** will now be listed as an action. 
 
 <img
     src="screenshots/29 - Action.png"
@@ -233,6 +235,7 @@ Click on **Actions**.
     alt="Add action"
 />
 
+4. Next, we must select a **Flow Type**. Go to the **Flows** section below. Select **Complement Token** from the dropdown.
 
 <img
     src="screenshots/30 - Action.png"
@@ -240,6 +243,7 @@ Click on **Actions**.
     alt="Add action"
 />
 
+5. Now, you must choose a trigger. Click **Add trigger**. Select **Pre access token creation** as the trigger type and select **assignRoleAndExperienceClaims** as the associated action.
 
 <img
     src="screenshots/31 - Action.png"
@@ -247,6 +251,8 @@ Click on **Actions**.
     alt="Add action"
 />
 
+
+6. And now you will see the trigger listed.
 
 <img
     src="screenshots/32 - Action.png"
