@@ -132,18 +132,13 @@ Leverage actions, custom metadata, and claims for attribute-based access control
 4. Copy your Client ID and Client Secret. Click **Close**. 
 
 <img
-    src="screenshots/17 - Create Service User and Generate CC.png"
+    src="screenshots/17 - Service user CC.png"
     width="75%"
     alt="Create service user"
 />
 
 5. Now you have a service user, along with their client credentials. 
 
-<img
-    src="screenshots/17 - Service user CC.png"
-    width="75%"
-    alt="Create service user"
-/>
 
 
 
