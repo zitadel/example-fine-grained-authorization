@@ -37,7 +37,8 @@ Leverage actions, custom metadata, and claims for attribute-based access control
     alt="Create org, project and API app"
 />
 
-5. Now review your configuration and click **Create**.  
+5. Now review your configuration and click **Create**. 
+ 
 <img
     src="screenshots/5 - New API.png"
     width="75%"
@@ -52,10 +53,29 @@ Leverage actions, custom metadata, and claims for attribute-based access control
     alt="Create org, project and API app"
 />
 
-7. When you click on **URLs** on the left, you will see the relevant OIDC URLs. Note down the **issuer** URL, **token_endpoint** and **introspection_endpoint**.  
+7. When you click **URLs** on the left, you will see the relevant OIDC URLs. Note down the **issuer** URL, **token_endpoint** and **introspection_endpoint**.  
 
 <img
     src="screenshots/8 - URLs.png"
     width="75%"
     alt="Create org, project and API app"
 />
+
+### 2/ Create Roles in the Newsroom Project
+
+1. Also note down the **Resource ID** of your project (go to the project and copy the Resource ID)  
+
+<img
+    src="screenshots/2 - New Project.png"
+    width="75%"
+    alt="Project settings"
+/>
+
+2. Select the **Assert Roles on Authentication** checkbox on the project dashboard and click **Save**.
+<img
+    src="screenshots/2.1 - Tick the box.png"
+    width="75%"
+    alt="Project settings"
+/>
+
+
