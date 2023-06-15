@@ -273,7 +273,7 @@ You can also add a few more service users with different roles and experience_le
 
 Now, when a user requests an access token, the action will be executed, transforming the user roles and metadata into the required format and adding them as a custom claim to the token. This custom claim can then be used by third-party applications to manage fine-grained user access.
 
-2. Set up the API Project <a name="2"></a>
+## 2. Set up the API Project <a name="2"></a>
 
 1. Clone the Project from GitHub:
 Run the command `git clone https://github.com/zitadel/example-fine-grained-authorization.git` to clone the project from this GitHub repository. 
