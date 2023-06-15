@@ -209,3 +209,50 @@ You can also add a few more service users with different roles and experience_le
     alt="Add metadata"
 />
 
+### 6/ Create an Action to Capture Role and Metadata in Custom Claim
+
+Click on **Actions**.
+
+<img
+    src="screenshots/27 - Action.png"
+    width="75%"
+    alt="Add action"
+/>
+
+
+<img
+    src="screenshots/28 - Action.png"
+    width="75%"
+    alt="Add action"
+/>
+
+
+<img
+    src="screenshots/29 - Action.png"
+    width="75%"
+    alt="Add action"
+/>
+
+
+<img
+    src="screenshots/30 - Action.png"
+    width="75%"
+    alt="Add action"
+/>
+
+
+<img
+    src="screenshots/31 - Action.png"
+    width="75%"
+    alt="Add action"
+/>
+
+
+<img
+    src="screenshots/32 - Action.png"
+    width="75%"
+    alt="Add action"
+/>
+
+
+
