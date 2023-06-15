@@ -66,7 +66,7 @@ Leverage actions, custom metadata, and claims for attribute-based access control
 1. Also note down the **Resource ID** of your project (go to the project and copy the Resource ID)  
 
 <img
-    src="screenshots/2 - New Project.png"
+    src="screenshots/9 - Create Roles.png"
     width="75%"
     alt="Project settings"
 />
@@ -79,16 +79,12 @@ Leverage actions, custom metadata, and claims for attribute-based access control
     alt="Project settings"
 />
 
-<img
-    src="screenshots/9 - Create Roles.png"
-    width="75%"
-    alt="Create roles"
-/>
+3.
 
 <img
     src="screenshots/10 - Create Roles.png"
     width="75%"
-    alt="Create roles"
+    alt="Project settings"
 />
 
 <img
