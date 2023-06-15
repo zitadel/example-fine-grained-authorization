@@ -116,7 +116,7 @@ Leverage actions, custom metadata, and claims for attribute-based access control
 2. Next, add the details of the service user and select **JWT** for **Access Token Type** and click **Create**. 
 
 <img
-    src="screenshots/15 - Create Service User.png"
+    src="screenshots/15 - Create Service User 1.png"
     width="75%"
     alt="Create service user"
 />
@@ -124,7 +124,7 @@ Leverage actions, custom metadata, and claims for attribute-based access control
 3.  Click the **Actions** button on the top right corner. Select **Generate Client Secret** from the drop-down menu. 
 
 <img
-    src="screenshots/16 - Create Service User 1.png"
+    src="screenshots/16 - Create Service User and Generate CC.png"
     width="75%"
     alt="Create service user"
 />
