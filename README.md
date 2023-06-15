@@ -275,17 +275,17 @@ Now, when a user requests an access token, the action will be executed, transfor
 
 ## 2. Set up the API Project <a name="2"></a>
 
-1. Clone the Project from GitHub:
+**Clone the Project from GitHub:**
 
 Run the command below to clone the project from this GitHub repository: 
 - `git clone https://github.com/zitadel/example-fine-grained-authorization.git`  
 
-2. Navigate to the Project Directory:
+**Navigate to the Project Directory:**
 
 After cloning, navigate to the project directory with 
 - `cd example-fine-grained-authorization`.
 
-3. Setup a Python Environment:
+**Setup a Python Environment:**
 
 Ensure you have Python 3 and pip installed. You can check this by running 
 - `python --version`
@@ -303,23 +303,51 @@ Activate the environment by running:
 
 After running this command, your terminal should indicate that you are now working inside the env virtual environment.
 
-4. Install Dependencies:
+**Install Dependencies:**
 
 With the terminal at the project directory (the one containing requirements.txt), run 
 - `pip3 install -r requirements.txt` 
 
 to install the necessary dependencies.
 
-5. Configure Environment Variables:
+**Configure Environment Variables:**
 
-The project requires certain environment variables. Fill in the .env file with the values we retrieved from ZITADEL.
+The project requires certain environment variables. Fill in the `.env` file with the values we retrieved from ZITADEL.
 
-6. Run the Application:
+**Run the Application:**
 
-The Flask API (in [app.py](https://github.com/zitadel/example-fine-grained-authorization/blob/main/app.py)) uses JWT tokens and custom claims for fine-grained access control. It checks the custom claim experience_level for the roles `journalist` and `editor` on every request, using this information to decide if the authenticated user can access the requested endpoint. Run the Flask application by executing: 
+The Flask API (in [`app.py`](https://github.com/zitadel/example-fine-grained-authorization/blob/main/app.py)) uses JWT tokens and custom claims for fine-grained access control. It checks the custom claim experience_level for the roles `journalist` and `editor` on every request, using this information to decide if the authenticated user can access the requested endpoint. Run the Flask application by executing: 
 - `python3 app.py`
 
 If everything is set up correctly, your Flask application should now be running.
 
 This project was developed and tested with Python 3. If you encounter any issues, please ensure you're using a Python 3 interpreter.
+
+## 3. Run and Test the API <a name="3"></a>
+
+**Run the API** 
+
+1. Ensure you have cloned the repository and installed the necessary dependencies as described earlier.
+2. Run the `client_credentials_token_generator.py` script to generate an access token. Open your terminal and navigate to the project directory, then run the script using python3:
+- `python3 client_credentials_token_generator.py`
+3. If successful, this will print an access token to your terminal. This is the token you'll use to authenticate your requests to the API.
+4. If you didn't stat the Flask API earlier, run the API by opening another terminal in the project directory and running:
+- `python3 app.py`
+5. The API server should be now running and ready to accept requests.
+
+Now you can use cURL or any other HTTP client (like Postman) to make requests to the API. Remember to replace your_access_token in the curl commands with the access token you obtained in step 2.
+
+**Test the API**
+
+***Scenario 1: Junior Editor Tries to Edit an Article (Success)***
+User with `editor` role and `junior` experience_level tries to call `edit_article` endpoint.
+
+- `curl -H "Authorization: Bearer <your_access_token>" -X POST http://localhost:5000/edit_article`
+- Expected Output: `{"message": "Article edited successfully"}`
+
+***Scenario 2: Junior Editor Tries to Publish an Article (Failure)***
+User with `editor` role and `junior` experience_level tries to call `publish_article` endpoint.
+
+- `curl -H "Authorization: Bearer <your_access_token>" -X POST http://localhost:5000/publish_article`
+- `Expected Output: {"message": "Access denied! \nYou are a junior editor and therefore cannot access publish_article"}`
 
