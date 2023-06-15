@@ -173,5 +173,31 @@ Leverage actions, custom metadata, and claims for attribute-based access control
     alt="Add authorization"
 />
 
+### 5/ Add Metadata to the Users
 
+Now, let's add metadata to the user profile to indicate their level of seniority. Use 'experience_level' as the key, and for its value, choose from 'junior', 'intermediate', or 'senior'. Although we can typically assume this metadata is set through an API call made by the HR application, for simplicity and ease of understanding, we will set the metadata directly in the console.
+
+<img
+    src="screenshots/23 - SU metadata.png"
+    width="75%"
+    alt="Add metadata"
+/>
+
+<img
+    src="screenshots/24 - SU metadata.png"
+    width="75%"
+    alt="Add metadata"
+/>
+
+<img
+    src="screenshots/25 - SU metadata.png"
+    width="75%"
+    alt="Add metadata"
+/>
+
+<img
+    src="screenshots/26 - Users and roles list.png"
+    width="75%"
+    alt="Add metadata"
+/>
 
