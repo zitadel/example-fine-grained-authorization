@@ -276,34 +276,43 @@ Now, when a user requests an access token, the action will be executed, transfor
 ## 2. Set up the API Project <a name="2"></a>
 
 1. Clone the Project from GitHub:
-Run the command `git clone https://github.com/zitadel/example-fine-grained-authorization.git` to clone the project from this GitHub repository. 
+Run the command below to clone the project from this GitHub repository: 
+`git clone https://github.com/zitadel/example-fine-grained-authorization.git`  
 
 2. Navigate to the Project Directory:
 After cloning, navigate to the project directory with 
 `cd example-fine-grained-authorization`.
 
 3. Setup a Python Environment:
-Ensure you have Python 3 and pip installed. You can check this by running `python --version` and `pip --version` in your terminal. If you don't have 
-Python or pip installed, you will need to install them.
-Next, create a new virtual environment for this project by running `python3 -m venv env`.
+Ensure you have Python 3 and pip installed. You can check this by running 
+`python --version`
+and 
+`pip --version` 
+in your terminal. If you don't have Python or pip installed, you will need to install them.
+
+Next, create a new virtual environment for this project by running 
+`python3 -m venv env`.
 Activate the environment by running:
-On Windows: .\env\Scripts\activate
-On Unix or MacOS: source env/bin/activate
+On Windows: `.\env\Scripts\activate`
+On Unix or MacOS: `source env/bin/activate`
 After running this command, your terminal should indicate that you are now working inside the env virtual environment.
 
 4. Install Dependencies:
-With the terminal at the project directory (the one containing requirements.txt), run `pip install -r requirements.txt` to install the necessary dependencies.
+With the terminal at the project directory (the one containing requirements.txt), run 
+`pip install -r requirements.txt` 
+to install the necessary dependencies.
 
 5. Configure Environment Variables:
 The project requires certain environment variables. Fill in the .env file with the values we retrieved from ZITADEL.
 
 6. Run the Application:
-Run the Flask application by executing: `python app.py`
+The Flask API (in [app.py](https://github.com/zitadel/example-fine-grained-authorization/blob/main/app.py)) uses JWT tokens and custom claims for fine-grained access control. It checks the custom claim experience_level for the roles `journalist` and `editor` on every request, using this information to decide if the authenticated user can access the requested endpoint. Run the Flask application by executing: 
+`python app.py`
 If everything is set up correctly, your Flask application should now be running.
 
 This project was developed and tested with Python 3. If you encounter any issues, please ensure you're using a Python 3 interpreter.
 
-The Flask API that uses JWT tokens and custom claims for fine-grained access control checks the custom claim experience_level for the roles journalist and editor on every request, using this information to decide if the authenticated user can access the requested endpoint.
+
 
 app.py
 
