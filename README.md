@@ -351,7 +351,7 @@ User with `editor` role and `junior` experience_level tries to call `edit_articl
 User with `editor` role and `junior` experience_level tries to call `publish_article` endpoint.
 
 - `curl -H "Authorization: Bearer <your_access_token>" -X POST http://localhost:5000/publish_article`
-- Expected Output: `{"message": "Access denied! \nYou are a junior editor and therefore cannot access publish_article"}`
+- Expected Output: `{"message": "Access denied! You are a junior editor and therefore cannot access publish_article"}`
 
 
 **Scenario 3: Senior Journalist Tries to Write an Article (Success)**
@@ -365,7 +365,7 @@ User with `journalist` role and `senior` experience_level tries to call `write_a
 User with `journalist` role and 'junior' experience_level tries to call `review_articles` endpoint.
 
 - `curl -H "Authorization: Bearer <your_access_token>" -X POST http://localhost:5000/review_articles`
-- Expected Output: `{"message": "Access denied! \nYou are a junior journalist and therefore cannot access review_articles"}`
+- Expected Output: `{"message": "Access denied! You are a junior journalist and therefore cannot access review_articles"}`
 
 
 **Scenario 5: Senior Editor Tries to Review Articles (Success)**
