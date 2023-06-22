@@ -289,9 +289,9 @@ After cloning, navigate to the project directory with
 **Setup a Python Environment:**
 
 Ensure you have Python 3 and pip installed. You can check this by running 
-- `python --version`
+- `python3 --version`
 and 
-- `pip --version` 
+- `pip3 --version` 
 
 in your terminal. If you don't have Python or pip installed, you will need to install them.
 
